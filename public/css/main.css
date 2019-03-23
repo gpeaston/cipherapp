@@ -135,6 +135,11 @@ h1 {
     transition: 0.3s;
 }
 
+.button:active {
+    position: relative;
+    top: 1px;
+}
+
 .randombutton {
     background-color: #a6a6a6;
     border: none;
@@ -162,6 +167,11 @@ h1 {
     display: inline-block;
     font-size: 16px;
     transition: 0.3s;
+}
+
+.randombutton:active {
+    position: relative;
+    top: 1px;
 }
 
 .show {
