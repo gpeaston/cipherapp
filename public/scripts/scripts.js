@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 function resetCaesar() {
 
     //reset all fields to blank
@@ -7,6 +8,7 @@ function resetCaesar() {
     document.getElementById("my-key1").value = "";
     document.getElementById("cipher-text").value = "";
     document.getElementById("original-text").value = "";
+    document.getElementById("error-text").value = "";
 }
 
 function resetRev() {
@@ -30,7 +32,7 @@ j.style.display = "none";
 }
 
 
-function randomInt() { //used w3 schools to get correct syntax https://www.w3schools.com/js/js_random.asp
+function randomInt() { // used w3 schools to get correct syntax https://www.w3schools.com/js/js_random.asp
     var min = 1;
     var max = 25;
     var random = Math.floor(Math.random() * (max - min)) + min;
@@ -48,14 +50,17 @@ function encrypt() {
 
     var userKey = document.getElementById("my-key").value;
     var userText = document.getElementById("plain-text").value;
-    
+    // var alert = "WARNING! Key must be between 1 and 25";
+    // var alert1 = "WARNING! Plain Text is empty";
     if (!(userKey >= 1 && userKey < 26)) { //if not greater than 1, less than 26 or left empty send  alert
+        // document.getElementById("error-text").value = alert;
         alert("WARNING! Key must be between 1 and 25");
         return;
     }
     
     if (userText.length === 0) {
         alert("WARNING! Plain Text is empty");
+        // document.getElementById("error-text").value = alert1;
     }
 
     userText = userText.toLowerCase();

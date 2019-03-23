@@ -10,6 +10,13 @@ body {
 padding: 15px;
 }
 
+#maincontainer {
+    width: 95%;
+    margin: 0 auto;
+    /* allows main container to sit centred on the page */
+    padding: 10px;
+    background-color: #ffffff;
+}
 
 #container {
     width: 95%;
@@ -38,6 +45,12 @@ h1 {
     /* NEED TO RESEARCH THIS PART */
 }
 
+.maintitlepos {
+    color: white;
+    display: inline-block;
+    width: 480px;
+}
+
 .titlepos {
     /* float: left; */
     color: white;
@@ -47,9 +60,10 @@ h1 {
     /*fixed the width of this so resizing page doesn't cause the title to wrap */
 }
 
+
 .linkpos {
     float: right;
-    display: inline-block;
+    /* display: inline-block; */
     margin: 5px;
 }
 
@@ -163,4 +177,9 @@ display:none;
     margin: 0 auto;
     text-align: center;
     /* used for moving the RESET button to the centre of the container */
+}
+#error-text {
+    background-color: yellow;
+    border-style: none;
+    display: inline;
 }

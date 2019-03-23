@@ -6,17 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "set DEBUG=CipherApp & nodemon app.js",
-    "lint": "eslint app.js"
+    "lint": "eslint app.js",
+    "lint2": "eslint scripts.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.3.1",
     "chalk": "^2.4.2",
     "debug": "^4.1.1",
-    "ejs": "^2.6.1",
     "express": "4.16.4",
-    "jquery": "^3.3.1",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.10",
     "pug": "^2.0.3"

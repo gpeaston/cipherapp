@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles/main.css" type="text/css"> -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <link href="images/davincryptex.ico" rel="icon" type="image/x-icon">
+    <title>Reverse Cipher</title>
+
+
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="titlepos">
+            <h1>Reverse Cipher H</h1>
+        </div>
+        <!-- <div class="linkpos"><a href="index.html" class="links"> >> Caesar Cipher</a></div> -->
+        <div class="linkpos"><a href="/" class="links"> >> Caesar Cipher</a></div>
+
+    </div>
+    <div id="container">
+    <button class="randombutton" type="button" onclick="codec()">Change Mode</button><br>
+<div id="container1" style="display:block">
+        <h3>Plain Text to Cipher Text</h3>
+        <textarea class="textform" rows="5" input type="text" placeholder="Enter plain text here" id="inputString"></textarea><br><br>
+        <button class="button" type="button" onClick="reverseCipher()">Reverse!</button>
+        <p></p>
+        <!--<p id="reverse">ReversedPercy String: </p>-->
+        <textarea class="textform" readonly rows="5" placeholder="Reversed results" id="reverse"></textarea><br><br>
+</div>
+<div id="container2" style="display:none">
+        <h3>Cipher Text to Plain Text</h3>
+        <textarea class="textform" rows="5 " input type="text" placeholder="Enter cipher text" id="reversedString"></textarea><br><br>
+        <button class="button" type="button" onClick="unReverse()">Forward!</button>
+        <p></p>
+        <textarea readonly class="textform" id="normal" rows="5" placeholder="Plain text results"></textarea><br><br>
+        </div>
+        <div class="centre">
+            <button class="button" type="button" onclick="resetRev()">RESET</button><br>
+        </div>
+    </div>
+    <div id="footer">copyright 2019: Gary Peaston: Web Technologies Module SET08401: Napier University</div>
+
+    <!--closes out the div called container -->
+
+    <script src="scripts/scripts.js"></script>
+
+</body>

@@ -10,19 +10,24 @@ const port = process.env.PORT || 3000;
 
 app.use(morgan('tiny')); // combined,tiny
 app.use(express.static(path.join(__dirname, '/public/'))); // this express.static line instructs node to use the public directory for it's CSS and JS files.
-app.set('views', './src/views');
+app.set('views', './views');
 app.set('view engine', 'pug');
-// app.set('view engine', 'ejs');
+
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'index.html'));
-  // res.render('index', { list: ['a', 'b', 'c'], title: "Gaz's wee Plural Library" });
+  // res.sendFile(path.join(__dirname, 'views', 'index.html'));
+  res.render('index');
 });
-app.get('/index2', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'index2.html'));
+app.get('/caesar', (req, res) => {
+  res.render('caesar');
+  // res.sendFile(path.join(__dirname, 'views', 'index2.html'));
   // res.render('index', { list: ['a', 'b', 'c'], title: "Gaz's wee Plural Library" });
 });
 
-app.get('/cdnindex', (req, res) => {
+app.get('/reverse', (req, res) => {
+res.render('reverse');
+});
+
+app.get('/cdn', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'cdnindex.html'));
 });
 

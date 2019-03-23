@@ -1,0 +1,47 @@
+doctype html
+html(lang='')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    // <link rel="stylesheet" href="styles/main.css" type="text/css">
+    link(rel='stylesheet', href='css/main.css', type='text/css')
+    link(href='/public/images/davincryptex.ico', rel='icon', type='image/x-icon')
+    // Thanks to Markus Spiske @markusspiske on Unsplash.com for the use of his cryptography image used for the background
+    title Caesar Cipher
+  body
+    #navbar
+      .titlepos
+        h1 Caesar Cipher  
+      // <div class="linkpos"><a href="index2.html" class="links"> >> Reverse Cipher</a></div>
+      .linkpos
+        a.links(href='reverse')  &gt;&gt; Reverse Cipher
+    #container
+      button.randombutton(type='button', onclick='codec()') Change Mode
+      br
+      #container1(style='display:block')
+        h3 Plain Text to Cipher Text
+        textarea#plain-text.textform(rows='5', placeholder='Enter plain text here')
+        br
+        br
+        input#my-key.keyentry(type='number', min='0', max='25', placeholder='KEY (1 - 25 or press Random)')
+        button.randombutton(type='button', onclick='randomInt()') Random
+        //- textarea#plain-text.textform(rows='1', placeholder='Enter plain text here')|         
+        button.button(type='button', onclick='encrypt()') Encrypt! 
+        //- textarea#error-text.textform(rows='1')
+      #container2(style='display:none')
+        h3 Cipher Text to Plain Text
+        textarea#cipher-text.textform(rows='5', placeholder='Enter encrypted text - correct key is required above')
+        br
+        br
+        input#my-key1.keyentry(type='number', min='0', max='25', placeholder='KEY (1 - 25)')
+        button.button(type='button', onclick='decrypt()') Decrypt!
+      h3 Output text
+      textarea#original-text.textform(readonly='', rows='5')
+      br
+      br
+      .centre
+        button.button(type='button', onclick='resetCaesar()') RESET
+        br
+    #footer
+      | copyright 2019: Gary Peaston: Web Technologies Module SET08401: Napier University
+    script(type='text/javascript', src='scripts/scripts.js')
