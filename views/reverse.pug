@@ -2,13 +2,10 @@ doctype html
 html(lang='')
   head
     meta(charset='utf-8')
-    |     
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     // <link rel="stylesheet" href="styles/main.css" type="text/css">
     link(rel='stylesheet', href='css/main.css', type='text/css')
-    |     
     link(href='images/davincryptex.ico', rel='icon', type='image/x-icon')
-    |     
     title Reverse Cipher
   body
     #navbar
@@ -17,19 +14,16 @@ html(lang='')
       // <div class="linkpos"><a href="index.html" class="links"> >> Caesar Cipher</a></div>
       .linkpos
         a.links(href='/caesar')  &gt;&gt; Caesar Cipher
-    |     
     #container
-      button.randombutton(type='button', onclick='codec()') Change Mode
+      button.button(type='button', onclick='codec()') Change Mode
       br
       #container1(style='display:block')
         h3 Plain Text to Cipher Text
-        |         
         textarea#inputString.textform(rows='5', input='', type='text', placeholder='Enter plain text here')
         br
         br
-        |         
-        button.button(type='button', onclick='reverseCipher()') Reverse!
-        |         
+        button.button(type='button', onclick='reverseCipher()') Reverse
+        button.button(type='button', onclick='reverseCipher()') Send...
         p
         // <p id="reverse">ReversedPercy String: </p>
         textarea#reverse.textform(readonly='', rows='5', placeholder='Reversed results')
@@ -37,24 +31,20 @@ html(lang='')
         br
       #container2(style='display:none')
         h3 Cipher Text to Plain Text
-        |         
         textarea#reversedString.textform(rows='5 ', input='', type='text', placeholder='Enter cipher text')
         br
         br
-        |         
         button.button(type='button', onclick='unReverse()') Forward!
-        |         
         p
-        |         
         textarea#normal.textform(readonly='', rows='5', placeholder='Plain text results')
         br
         br
-      |         
       .centre
         button.button(type='button', onclick='resetRev()') RESET
         br
-    |     
     #footer
       | copyright 2019: Gary Peaston: Web Technologies Module SET08401: Napier University
+      .linkpos
+        a.links(href='/')  &gt;&gt; Home
     // closes out the div called container
     script(src='scripts/scripts.js')

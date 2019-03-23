@@ -16,7 +16,7 @@ html(lang='')
       .linkpos
         a.links(href='reverse')  &gt;&gt; Reverse Cipher
     #container
-      button.randombutton(type='button', onclick='codec()') Change Mode
+      button.button(type='button', onclick='codec()') Change Mode
       br
       #container1(style='display:block')
         h3 Plain Text to Cipher Text
@@ -26,7 +26,8 @@ html(lang='')
         input#my-key.keyentry(type='number', min='0', max='25', placeholder='KEY (1 - 25 or press Random)')
         button.randombutton(type='button', onclick='randomInt()') Random
         //- textarea#plain-text.textform(rows='1', placeholder='Enter plain text here')|         
-        button.button(type='button', onclick='encrypt()') Encrypt! 
+        button.button(type='button', onclick='encrypt()') Encrypt 
+        button.button(type='button', onclick='encrypt()') Send... 
         //- textarea#error-text.textform(rows='1')
       #container2(style='display:none')
         h3 Cipher Text to Plain Text
@@ -44,4 +45,6 @@ html(lang='')
         br
     #footer
       | copyright 2019: Gary Peaston: Web Technologies Module SET08401: Napier University
+      .linkpos
+        a.links(href='/')  &gt;&gt; Home
     script(type='text/javascript', src='scripts/scripts.js')
