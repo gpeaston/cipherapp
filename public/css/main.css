@@ -12,8 +12,6 @@ padding: 15px;
 
 #maincontainer {
     width: 95%;
-    position: absolute; 
-    top: 50%;
     margin: 0 auto;
     /* allows main container to sit centred on the page */
     padding: 10px;
