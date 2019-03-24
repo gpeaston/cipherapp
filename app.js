@@ -19,23 +19,25 @@ app.get('/', (req, res) => {
 });
 app.get('/caesar', (req, res) => {
   res.render('caesar');
-  // res.sendFile(path.join(__dirname, 'views', 'index2.html'));
-  // res.render('index', { list: ['a', 'b', 'c'], title: "Gaz's wee Plural Library" });
 });
 
 app.get('/reverse', (req, res) => {
-res.render('reverse');
+  res.render('reverse');
 });
 
-app.get('/cdn', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'cdnindex.html'));
+app.get('/login', (req, res) => {
+  res.render('login');
+});  
+
+app.get('/signup', (req, res) => {
+  res.render('signup');
 });
 
 app.get('/gary', (req, res) => {
   res.send('This should be the Gary Route');
 });
 
-// const port = port;
+
 app.listen(port, () => {
   // console.log('listening on port ' + chalk.green('port')); // standard boring message
   // console.log(`listening on port ${chalk.green('port')}`); // string templates in message
