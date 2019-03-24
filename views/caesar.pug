@@ -3,10 +3,8 @@ html(lang='')
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    // <link rel="stylesheet" href="styles/main.css" type="text/css">
     link(rel='stylesheet', href='css/main.css', type='text/css')
     link(href='images/davincryptex.ico', rel='icon', type='image/x-icon')
-    // Thanks to Markus Spiske @markusspiske on Unsplash.com for the use of his cryptography image used for the background
     title Caesar Cipher
   body
     #navbar
@@ -31,7 +29,7 @@ html(lang='')
         //- textarea#error-text.textform(rows='1')
       #container2(style='display:none')
         h3 Cipher Text to Plain Text
-        textarea#cipher-text.textform(rows='5', placeholder='Enter encrypted text - correct key is required above')
+        textarea#cipher-text.textform(rows='5', placeholder='Enter encrypted text - correct key is required below')
         br
         br
         input#my-key1.keyentry(type='number', min='0', max='25', placeholder='KEY (1 - 25)')
