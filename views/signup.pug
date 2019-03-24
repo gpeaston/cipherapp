@@ -22,17 +22,17 @@ html(lang='')
       br
       |       
       .centre
-        form(name='signup-form', action='/auth/create', method='post')
+        form(name='signup-form', method='post')
           label Enter a username:        
-          input#user-name(type='text', name='name_field', value='')
+          input#user-name(type='text', value='')
           br
           br
           label(for='user-pass') Enter a password:      
-          input#user_pass(type='password', name='pword_field', value='')
+          input#user_pass(type='password', value='')
           br
           br
           label(for='user-pass1') Confirm password:      
-          input#user_pass1(type='password', name='pword1_field', value='')
+          input#user_pass1(type='password', value='')
           br
           br
           br
