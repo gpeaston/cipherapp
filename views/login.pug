@@ -21,20 +21,22 @@ html(lang='')
       br
       br
       br
-      br
-      br
-      br
-      br
-      br
-      br
-      br
-      br
-      br
-      br
-      br
-      br
+      .centre
+        form(action='/team_name_url/', method='post')
+        label(for='team_name') Enter your username:      
+        input#team_name(type='text', name='name_field', value='')
+        br
+        br
+        form(action='/team_name_url/', method='post')
+        label(for='team_name') Enter your password:      
+        input#team_name(type='password', name='pword_field', value='')
+        br
+        br
+        br
       .centre
         button.button(type='button', onclick='resetRev()') Login
+        br
+        br
         br
     #footer
       | copyright 2019: Gary Peaston: Web Technologies Module SET08401: Napier University

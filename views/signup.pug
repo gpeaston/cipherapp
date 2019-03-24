@@ -2,40 +2,45 @@ doctype html
 html(lang='')
   head
     meta(charset='utf-8')
+    |     
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
     link(rel='stylesheet', href='css/main.css', type='text/css')
+    |     
     link(href='images/davincryptex.ico', rel='icon', type='image/x-icon')
     // Thanks to Markus Spiske @markusspiske on Unsplash.com for the use of his cryptography image used for the background
     title Create Account
+  |   
   body
     #navbar
       .maintitlepos
-        h1 Create New Account  
-      // <div class="linkpos"><a href="index2.html" class="links"> >> Reverse Cipher</a></div>
-      //- #maincontainer
-      //- .linkpos - MIGHT HAVE TO PUT THIS BACK IN FOR SPACING
-        //- a.links(href='/caesar')  &gt;&gt; Caesar Cipher
+        h1 Create New Account-Pug   
     #container
-      //- button.button(type='button', onclick='codec()') Change Mode
       br
       br
       br
       br
-      br
-      br
-      br
-      br
-      br
-      br
-      br
-      br
-      br
-      br
-      br
-      br
+      |       
       .centre
-        button.button(type='button', onclick='resetRev()') Create
-        br
+        form(name='signup-form', action='/auth/create', method='post')
+          label Enter a username:        
+          input#user-name(type='text', name='name_field', value='')
+          br
+          br
+          label(for='user-pass') Enter a password:      
+          input#user_pass(type='password', name='pword_field', value='')
+          br
+          br
+          label(for='user-pass1') Confirm password:      
+          input#user_pass1(type='password', name='pword1_field', value='')
+          br
+          br
+          br
+          br
+          br  
+          button.button(input='', type='submit', value='Create') Create
+      br
+      br
     #footer
       | copyright 2019: Gary Peaston: Web Technologies Module SET08401: Napier University
       .linkpos

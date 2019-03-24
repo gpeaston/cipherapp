@@ -1,5 +1,6 @@
 const express = require('express');
 const cipherRouter = express.Router();
+const path = require('path');
 // const app = express();
 
 cipherRouter.route('/')
@@ -26,6 +27,10 @@ cipherRouter.route('/login')
 cipherRouter.route('/signup')
   .get((req, res) => {
     res.render('signup');
+  });
+  cipherRouter.route('/signuphtm')
+  .get((req, res) => {
+    res.sendFile(path.join(__dirname, '../views', 'signuphtm.html'));
   });
 
 module.exports = cipherRouter;
