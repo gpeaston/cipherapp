@@ -33,6 +33,11 @@ cipherRouter.route('/signup')
     res.sendFile(path.join(__dirname, '../views', 'signuphtm.html'));
   });
 
+  cipherRouter.route('/signuptest')
+  .get((req, res) => {
+    res.sendFile(path.join(__dirname, '../views', 'signuptest.html'));
+  });
+
 module.exports = cipherRouter;
 
 // app.get('/', (req, res) => {

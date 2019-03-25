@@ -5,9 +5,10 @@ const morgan = require('morgan'); // allows logging of web traffic
 const path = require('path'); // means it doesn't care about / or \ in my code for filepaths for HTML serving
 const fs = require('fs');
 
-const data = fs.readFileSync('users.json');
-const logins = JSON.parse(data);
-console.log(logins);
+// const data = fs.readFileSync('users.json');
+// const logins = JSON.parse(data);
+// console.log(logins);
+// fs.writeFileSync('users2.JSON', logins);
 
 
 const app = express();
