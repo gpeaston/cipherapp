@@ -36,6 +36,7 @@ cipherRouter.route('/signup')
   cipherRouter.route('/signuptest')
   .get((req, res) => {
     res.sendFile(path.join(__dirname, '../views', 'signuptest.html'));
+    // res.sendFile(path.join(__dirname, '../', 'signuptest.html'));
   });
 
 module.exports = cipherRouter;
