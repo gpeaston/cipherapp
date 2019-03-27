@@ -1,3 +1,5 @@
+var fs = require('fs')
+
 /* eslint-disable no-unused-vars */
 function resetCaesar() {
 
@@ -130,4 +132,17 @@ function unReverse() {
     var reverseArray = splitString.reverse(); //uses the builtin reverse function to reverse the entire string/array
     var correctString = reverseArray.join(""); //joins each part of the array to create a single string
     document.getElementById("normal").innerHTML = correctString;
+}
+
+function signUp() {
+    // alert("Well, this did work by alerting the screen");
+    var userName = document.getElementById("user_name").value;
+    var passWord = document.getElementById("user_pass").value;
+    alert(userName);
+    alert(passWord);
+    console.log(userName);
+    console.log(passWord);
+    fs.open('temp.txt')
+    fs.writeFile('temp.txt', userName); 
+    fs.close('temp.txt');
 }
