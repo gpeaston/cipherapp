@@ -1,0 +1,59 @@
+doctype html
+html(lang='')
+  head
+    meta(charset='utf-8')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
+    link(rel='stylesheet', href='css/main.css', type='text/css')
+    |     
+    link(href='images/davincryptex.ico', rel='icon', type='image/x-icon')
+    // Thanks to Markus Spiske @markusspiske on Unsplash.com for the use of his cryptography image used for the background
+    title Create Account
+  |   
+  body
+    #navbar
+      .maintitlepos
+        h1 Create New Account-PUG2
+    |     
+    #container
+      br
+      br
+      br
+      br
+      |       
+      .centre
+        form(name='signup-form', action='signup', method='post')
+          label Enter a username:
+          |         
+          input#user_name(type='text', value='')
+          br
+          br
+          |         
+          label(for='user-pass') Enter a password:
+          |         
+          input#user_pass(type='password', value='')
+          br
+          br
+          |         
+          label(for='user-pass1') Confirm password:
+          |         
+          input#user_pass1(type='password', value='')
+      br
+      br
+      br
+      br
+      |       
+      .centre
+        button.button(input='', type='submit', onclick='signUp()') Create
+        br
+        br
+        br
+        // <button class="button" onclick="encrypt()">Encrypt!</button>
+    |     
+    #footer
+      | copyright 2019: Gary Peaston: Web Technologies Module SET08401: Napier University
+      .linkpos
+        a.links(href='/')  &gt;&gt; Home
+    |     
+    script(src='scripts/scripts.js')

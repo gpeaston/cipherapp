@@ -28,6 +28,15 @@ cipherRouter.route('/signup')
   .get((req, res) => {
     res.render('signup');
   });
+
+  cipherRouter.route('/signup2')
+  .get((req, res) => {
+    res.render('signup2');
+  });
+
+
+
+
   cipherRouter.route('/signuphtm')
   .get((req, res) => {
     res.sendFile(path.join(__dirname, '../views', 'signuphtm.html'));
