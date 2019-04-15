@@ -24,6 +24,12 @@ cipherRouter.route('/login')
     res.render('login');
   });
 
+  cipherRouter.route('/login2')
+  .get((req, res) => {
+    res.render('login2');
+  });
+
+
 cipherRouter.route('/signup')
   .get((req, res) => {
     res.render('signup');

@@ -3,7 +3,7 @@ const authRouter = express.Router();
 const debug = require ('debug')('app:authroutes');
 
 function router() {
-    authRouter.route('/users.json')
+    authRouter.route('/steve')
     .post((req, res) => {
         debug(req.body);
         res.json(req.body);
