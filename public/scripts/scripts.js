@@ -135,22 +135,11 @@ function unReverse() {
 }
 
 function signUp() {
-<<<<<<< HEAD
     alert("Well, this did work by alerting the screen");
-=======
-    // alert("Well, this did work by alerting the screen");
->>>>>>> d5aa2e558d1d36c126b9d6b6f0dc7ff1144b5b40
     var userName = document.getElementById("user_name").value;
     var passWord = document.getElementById("user_pass").value;
     alert(userName);
     alert(passWord);
     console.log(userName);
     console.log(passWord);
-<<<<<<< HEAD
-    fs.writeFile('temp.txt', userName);
-=======
-    fs.open('temp.txt')
-    fs.writeFile('temp.txt', userName); 
-    fs.close('temp.txt');
->>>>>>> d5aa2e558d1d36c126b9d6b6f0dc7ff1144b5b40
 }
